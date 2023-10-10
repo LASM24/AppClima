@@ -1,4 +1,4 @@
-/* estilos del HTML no interactivo*/
+/* estilos generales del HTML no interactivo*/
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 
 body {
   font-family: sans-serif;
-  background: url(./IMG/fondoo.jpg);
+  background: url(./IMG/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -18,6 +18,8 @@ body {
   height: 90vh;
   margin: 0;
 }
+
+/* estilos para las vistas de la pagina */
 
 .container {
   text-align: center;
@@ -36,16 +38,13 @@ body {
   padding-top: 25px;
 }
 
-#search-result{
-  align-items: center;
-}
-
 #search-input{
   width: 300px;
   height: 20px;
   text-align: center;
   margin-right: 20px;
   border-radius: 10px;
+  color: #000;
 }
 
 #search-button{
@@ -56,7 +55,13 @@ body {
   border-radius: 10px;
 }
 
+#divDelete{
+  margin-top: 100px;
+}
 
+#pDelete{
+  font-size: 30px;
+}
 /*  estilos para contenido añadido dinamicamente (resultados)*/
 
 /* Contenedor */
@@ -73,9 +78,9 @@ body {
 /* temperatura */
 #temperatura{
   font-size: 40px;
-  margin-top: 20px;
 }
 
+/* sensacion termica */
 #senTermica{
   font-size: 20px;
   display: inline-block;
@@ -111,8 +116,8 @@ body {
     border-width: 5px; 
   }
   50% {
-    border: 7px solid #fff; /* Cambio de color y ancho */
-    border-width: 5px; /* Ancho de borde en el medio de la animación */
+    border: 7px solid rgba(255, 255, 255, .4); 
+    border-width: 5px; 
   }
   100% {
     border: 4px solid #000;
