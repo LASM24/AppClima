@@ -126,27 +126,45 @@ body {
 /* Media queries para hacer el diseño responsive */
 @media (max-width: 768px) {
   body {
-    height: 100vh; /* Ajusta la altura del body al 100% de la altura visible */
+    height: 100vh; 
   }
   .container {
     width: 80%;
   }
   #search-input {
-    width: 100%;
+    width: 90%;
     margin-right: 0;
     margin-bottom: 10px;
   }
   #search-button {
-    width: 100%;
+    width: 30%;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    height: 100vh; /* Ajusta la altura del body al 100% de la altura visible */
+    height: 100vh;
   }
   .container {
     width: 100%;
     border-radius: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    min-height: 100vh; 
+  }
+
+  .container {
+    width: 80%;
+  }
+  #search-input {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #search-button {
+    width: 30%;
   }
 }
