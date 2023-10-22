@@ -54,7 +54,7 @@ async function obtenerClima(ciudad) {
 
       searchResults.innerHTML = `
         <div id="resultados">
-            <p id="ciudad"><img id="icon" src="/IMG/map-pin.svg">${cityName}, ${country}</p>
+            <p id="ciudad"><img id="icon" src="IMG/map-pin.svg">${cityName}, ${country}</p>
             <h2 id="temperatura">${temperature}°C </h2>
             <p id="emojiTemp">${temperaturaEmoji}</p>
             <p id="senTermica">${feelsLike} <br> Sensación térmica</p>
